@@ -1,19 +1,22 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="我是world"/>
+    <HelloVue msg="我是vue"/>
   </div>
 </template>
 
 <script>
 import Vue from 'vue'
 // 导入组件库
-import { HelloWorld } from 'toolsTest'
+import { HelloWorld, HelloVue } from 'toolsTest'
 // 注册组件库
 Vue.use(HelloWorld)
+Vue.use(HelloVue)
 export default {
   name: 'App',
   components:{
+    HelloVue,
     HelloWorld
   }
 }

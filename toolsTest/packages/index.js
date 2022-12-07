@@ -1,6 +1,7 @@
 import HelloWorld from "./hello-world"
+import HelloVue from "./hello-vue"
 
-const components = [HelloWorld]
+const components = [HelloWorld, HelloVue]
 
 const install = function (Vue) {
 	if (install.installed) return
@@ -13,5 +14,6 @@ if (typeof window !== 'undefined' && window.vue) {
 
 export {
 	install,
-	HelloWorld
+	HelloWorld,
+	HelloVue
 }
